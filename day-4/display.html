@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Display Property</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        button{
+            margin-top: 10px;
+
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box"></div>
+
+    <button id="btn-box">Hilangkan Kotak</button>
+
+    <script>
+        const btnBox = document.getElementById('btn-box');
+        const box = document.getElementById('box');
+
+        btnBox.addEventListener('click',function () {
+            box.style.display = 'none';
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Triangles&display=swap');
+
+*{
+    font-family: 'Rubik Doodle Triangles';
+}
+
+
+h2 {
+    color: blue;
+}
+
+/*selector*/
+h1 {
+    color: red;
+}
+
+.article {
+    color: #dada;
+}
+
+.kotak{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.navbar{
+    background-color: #DADADA;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}

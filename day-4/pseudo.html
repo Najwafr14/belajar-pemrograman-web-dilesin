@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Pseudo Class</title>
+    <style>
+        button{
+            background-color: aqua;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font: 16px;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+        }
+        /*marubah style ketika disentuh cursor*/
+        button:hover{
+            background-color: aquamarine;
+            transform: scale(1.1);
+        }
+        /*merubah style ketika cursor di klik*/
+        button:active{
+            background-color: black;
+            transform: scale(0.9);
+        }
+
+        .table-stripped{
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .table-stripped td,
+        .table-stripped th{
+            border: 1px solid grey;
+            padding: 8px;
+        }
+        table tr:nth-child(2n){
+            background-color: aqua;
+        }
+        table tr:first-child{
+            background-color: black;
+            color: white;
+        }
+        .card{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border-radius: 5px;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        .card:nth-child(2n){
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <button>
+        Hover Me
+    </button>
+
+    <table class="table-stripped">
+        <tr>
+            <td>No</td>
+            <td>Nama</td>
+            <td>Alamat</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Andi</td>
+            <td>Jakarta</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Budi</td>
+            <td>Bandung</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Caca</td>
+            <td>Surabaya</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Caca</td>
+            <td>Surabaya</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Caca</td>
+            <td>Surabaya</td>
+        </tr>
+    </table>
+
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+</body>
+</html>

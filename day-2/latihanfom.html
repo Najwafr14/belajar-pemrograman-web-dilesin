@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Form</title>
+</head>
+<body>
+    <p>From Pengisian Biodata</p>
+    <!---
+        label  utk memberi label pd inputan
+        name utk memberi nama pd inputan
+        id utk memberi id pada inputan
+    -->
+    <form action="https://formsubmit.co/najwafauziah123@gmail.com" method="POST" enctype="multipart/form-data">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" name="nama_lengkap" id="nama" required>
+        <br>
+        <label for="tanggal">Tanggal Lahir</label>
+        <input type="date" name="tanggal_lahir" id="tanggal" required>
+        <br>
+        <label for="alamat">Alamat</label>
+        <textarea name="alamat" id="alamat" cols="30" rows="10" required></textarea>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+        <label for="gender" required>gender</label>
+        <select name="gender" id="gender">
+            <option value="laki-laki">Laki laki</option>
+            <option value="perempuan">Perempuan</option>
+        </select>
+        <br>
+        <label for="umur">umur</label>
+        <input type="number" name="umur" id="umur">
+        <br>
+        <br>
+        <label for="pas_foto">Pas Foto</label>
+        <input type="file" name="pas_foto" id="pas_foto">
+        <br><br>
+        <button type="reset">Kosongkan Form</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

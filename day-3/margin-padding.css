@@ -1,0 +1,16 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.margin {
+    margin: 10px;
+}
+
+.btn-padding {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: .5rem 1rem;
+}
